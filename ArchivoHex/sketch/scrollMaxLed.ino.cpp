@@ -1,3 +1,5 @@
+#include <Arduino.h>
+#line 1 "C:\\Users\\milto\\Desktop\\Ciclo II 2021\\Arquitectura de computadoras\\proyecto proteus arduino\\proyectoArquitectura\\scrollMaxLed\\scrollMaxLed.ino"
 #include <GFButton.h>
 #include <MatrizLed.h>
 
@@ -18,6 +20,15 @@ int contador2 = 3;
 
 MatrizLed pantalla;
 
+#line 21 "C:\\Users\\milto\\Desktop\\Ciclo II 2021\\Arquitectura de computadoras\\proyecto proteus arduino\\proyectoArquitectura\\scrollMaxLed\\scrollMaxLed.ino"
+void setup();
+#line 28 "C:\\Users\\milto\\Desktop\\Ciclo II 2021\\Arquitectura de computadoras\\proyecto proteus arduino\\proyectoArquitectura\\scrollMaxLed\\scrollMaxLed.ino"
+void loop();
+#line 144 "C:\\Users\\milto\\Desktop\\Ciclo II 2021\\Arquitectura de computadoras\\proyecto proteus arduino\\proyectoArquitectura\\scrollMaxLed\\scrollMaxLed.ino"
+void freno();
+#line 220 "C:\\Users\\milto\\Desktop\\Ciclo II 2021\\Arquitectura de computadoras\\proyecto proteus arduino\\proyectoArquitectura\\scrollMaxLed\\scrollMaxLed.ino"
+void intermitente();
+#line 21 "C:\\Users\\milto\\Desktop\\Ciclo II 2021\\Arquitectura de computadoras\\proyecto proteus arduino\\proyectoArquitectura\\scrollMaxLed\\scrollMaxLed.ino"
 void setup() {
   pantalla.begin(12, 11, 10, 2); // dataPin, clkPin, csPin, numero de matrices de 8x8
   pantalla.rotar(false);
@@ -303,3 +314,4 @@ void intermitente(){//Funcion de luces intermitentes
 
     delay(100);
 }
+

@@ -1,0 +1,37 @@
+[
+  {
+    "Sourcefile": null,
+    "Include": "",
+    "Includepath": "D:\\Programas\\Arduino\\hardware\\arduino\\avr\\cores\\arduino"
+  },
+  {
+    "Sourcefile": null,
+    "Include": "",
+    "Includepath": "D:\\Programas\\Arduino\\hardware\\arduino\\avr\\variants\\standard"
+  },
+  {
+    "Sourcefile": "C:\\Users\\milto\\Desktop\\Ciclo II 2021\\Arquitectura de computadoras\\proyecto proteus arduino\\proyectoArquitectura\\ArchivoHex\\sketch\\scrollMaxLed.ino.cpp",
+    "Include": "GFButton.h",
+    "Includepath": "C:\\Users\\milto\\Documents\\Arduino\\libraries\\GFButton\\src"
+  },
+  {
+    "Sourcefile": "C:\\Users\\milto\\Desktop\\Ciclo II 2021\\Arquitectura de computadoras\\proyecto proteus arduino\\proyectoArquitectura\\ArchivoHex\\sketch\\scrollMaxLed.ino.cpp",
+    "Include": "MatrizLed.h",
+    "Includepath": "C:\\Users\\milto\\Documents\\Arduino\\libraries\\MatrizLed\\src"
+  },
+  {
+    "Sourcefile": "C:\\Users\\milto\\Desktop\\Ciclo II 2021\\Arquitectura de computadoras\\proyecto proteus arduino\\proyectoArquitectura\\ArchivoHex\\sketch\\scrollMaxLed.ino.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\milto\\Documents\\Arduino\\libraries\\GFButton\\src\\GFButton.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\milto\\Documents\\Arduino\\libraries\\MatrizLed\\src\\MatrizLed.cpp",
+    "Include": "",
+    "Includepath": null
+  }
+]

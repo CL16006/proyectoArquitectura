@@ -1,5 +1,6 @@
-#include <GFButton.h>
-#include <MatrizLed.h>
+# 1 "C:\\Users\\milto\\Desktop\\Ciclo II 2021\\Arquitectura de computadoras\\proyecto proteus arduino\\proyectoArquitectura\\scrollMaxLed\\scrollMaxLed.ino"
+# 2 "C:\\Users\\milto\\Desktop\\Ciclo II 2021\\Arquitectura de computadoras\\proyecto proteus arduino\\proyectoArquitectura\\scrollMaxLed\\scrollMaxLed.ino" 2
+# 3 "C:\\Users\\milto\\Desktop\\Ciclo II 2021\\Arquitectura de computadoras\\proyecto proteus arduino\\proyectoArquitectura\\scrollMaxLed\\scrollMaxLed.ino" 2
 
 // Create two button instances on pins 2 & 3
 GFButton intermitentes(4);
@@ -13,9 +14,11 @@ int contador1 = 4;
 int contador2 = 3;
 
 /*
- * Texto que aparece por la derecha y sale por la izquierda
- */
 
+ * Texto que aparece por la derecha y sale por la izquierda
+
+ */
+# 19 "C:\\Users\\milto\\Desktop\\Ciclo II 2021\\Arquitectura de computadoras\\proyecto proteus arduino\\proyectoArquitectura\\scrollMaxLed\\scrollMaxLed.ino"
 MatrizLed pantalla;
 
 void setup() {
@@ -25,19 +28,19 @@ void setup() {
   Serial.begin(9600);
 }
 
-void loop() { 
+void loop() {
 
   if (buttonStop.wasPressed()) {//FRENO
     pantalla.borrar();
   }
-    
+
   if (intermitentes.isPressed()) {//INTERMITENTES
-   
+
    intermitente();
   }
-  
+
   if (buttonRight.isPressed()) {//DERECHA
-    
+
       for(int i =0; i<16; i++){
         pantalla.borrar();
 
@@ -49,7 +52,7 @@ void loop() {
         pantalla.setLed(0, i-2, 1, true);
         pantalla.setLed(0, i-3, 7, true);
         pantalla.setLed(0, i-3, 0, true);
-        
+
         pantalla.setLed(0, i-1, 4, true);
         pantalla.setLed(0, i-1, 3, true);
         pantalla.setLed(0, i-2, 5, true);
@@ -78,15 +81,15 @@ void loop() {
         pantalla.setLed(0, i-6, 0, true);
 
         delay(10);
-          
-         
+
+
       }
-    
+
   }
 
-  
+
   if (buttonLeft.isPressed()) {//IZQUIERDA
-     
+
       for(int i =7; i>-10; i--){
         pantalla.borrar();
 
@@ -98,7 +101,7 @@ void loop() {
         pantalla.setLed(0, i+2, 1, true);
         pantalla.setLed(0, i+3, 7, true);
         pantalla.setLed(0, i+3, 0, true);
-        
+
         pantalla.setLed(0, i+1, 4, true);
         pantalla.setLed(0, i+1, 3, true);
         pantalla.setLed(0, i+2, 5, true);
@@ -127,22 +130,22 @@ void loop() {
         pantalla.setLed(0, i+6, 0, true);
 
         delay(10);
-          
-         
+
+
       }
-    
+
   }
   if (buttonStop.isPressed()) {//FRENO
-     freno();  
+     freno();
   }else{
       pantalla.borrar();
   }
 
-  
+
 }
 
 void freno(){//Funcion de luces para freno
-     
+
      pantalla.setLed(0, 0, 0, true);
      pantalla.setLed(0, 0, 1, true);
      pantalla.setLed(0, 0, 2, true);
@@ -218,7 +221,7 @@ void freno(){//Funcion de luces para freno
 }
 
 void intermitente(){//Funcion de luces intermitentes
-     
+
      pantalla.setLed(0, 0, 0, true);
      pantalla.setLed(0, 0, 1, true);
      pantalla.setLed(0, 0, 2, true);
@@ -291,11 +294,11 @@ void intermitente(){//Funcion de luces intermitentes
      pantalla.setLed(0, 4, 6, true);
      pantalla.setLed(0, 4, 7, true);
 
-     
 
-     
 
-     
+
+
+
 
     delay(200);
 
